@@ -8,7 +8,7 @@
             </send>
         </inSequence>
         <outSequence>
-            <switch source="get-property('STATUS')">
+            <switch description="" source="get-property('STATUS')">
                 <case regex="GEO_LOCATION_REQUEST">
                     <payloadFactory description="PayloadFactory" media-type="xml">
                         <format>
@@ -25,6 +25,7 @@
                         <endpoint key="HiRollerBankATM_LOCATOR"/>
                     </send>
                 </case>
+                <case regex="ATM_LOCATION_REQUEST"/>
                 <default/>
             </switch>
         </outSequence>
