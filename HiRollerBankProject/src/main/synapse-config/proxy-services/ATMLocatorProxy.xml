@@ -21,6 +21,7 @@
                         </args>
                     </payloadFactory>
                     <property description="Property" name="STATUS" scope="default" type="STRING" value="ATM_LOCATION_REQUEST"/>
+                    <send/>
                 </case>
                 <default/>
             </switch>
