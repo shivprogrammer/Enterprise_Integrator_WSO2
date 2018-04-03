@@ -20,6 +20,7 @@
                             <arg evaluator="xml" expression="//*[local-name()='return']" xmlns:hir="http://hirollerbankws.training.wso2.com/"/>
                         </args>
                     </payloadFactory>
+                    <property description="Property" name="STATUS" scope="default" type="STRING" value="ATM_LOCATION_REQUEST"/>
                 </case>
                 <default/>
             </switch>
