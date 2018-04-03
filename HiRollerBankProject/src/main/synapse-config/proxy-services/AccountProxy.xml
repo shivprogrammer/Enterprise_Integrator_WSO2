@@ -32,7 +32,9 @@
                                 <accountNo xmlns="">$1</accountNo>
                             </hir:saveBalance>
                         </format>
-                        <args/>
+                        <args>
+                            <arg evaluator="xml" expression="//hir:accountNo"/>
+                        </args>
                     </payloadFactory>
                 </default>
             </switch>
