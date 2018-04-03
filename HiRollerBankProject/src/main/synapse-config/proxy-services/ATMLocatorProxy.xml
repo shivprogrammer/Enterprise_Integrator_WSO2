@@ -25,7 +25,9 @@
                         <endpoint key="HiRollerBankATM_LOCATOR"/>
                     </send>
                 </case>
-                <case regex="ATM_LOCATION_REQUEST"/>
+                <case regex="ATM_LOCATION_REQUEST">
+                    <send/>
+                </case>
                 <default/>
             </switch>
         </outSequence>
