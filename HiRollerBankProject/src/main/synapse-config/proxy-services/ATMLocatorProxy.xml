@@ -3,6 +3,7 @@
     <target>
         <inSequence>
             <property description="Property" name="STATUS" scope="default" type="STRING" value="GEO_LOCATION_REQUEST"/>
+            <send/>
         </inSequence>
         <outSequence/>
         <faultSequence/>
