@@ -7,7 +7,12 @@
                 <endpoint key="HiRollerBankGEO_LOCATION"/>
             </send>
         </inSequence>
-        <outSequence/>
+        <outSequence>
+            <switch source="/default/xpath">
+                <case regex=".*+"/>
+                <default/>
+            </switch>
+        </outSequence>
         <faultSequence/>
     </target>
 </proxy>
