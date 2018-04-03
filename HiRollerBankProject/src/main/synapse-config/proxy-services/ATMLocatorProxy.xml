@@ -8,8 +8,8 @@
             </send>
         </inSequence>
         <outSequence>
-            <switch source="/default/xpath">
-                <case regex=".*+"/>
+            <switch source="get-property('STATUS')">
+                <case regex="GEO_LOCATION_REQUEST"/>
                 <default/>
             </switch>
         </outSequence>
