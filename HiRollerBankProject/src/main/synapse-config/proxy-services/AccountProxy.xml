@@ -11,6 +11,12 @@
                     <log description="Log" level="custom" separator=",">
                         <property name="Status" value="CHK Balance Request"/>
                     </log>
+                    <payloadFactory description="PayloadFactory" media-type="xml">
+                        <format>
+                            <inline xmlns=""/>
+                        </format>
+                        <args/>
+                    </payloadFactory>
                 </case>
                 <default>
                     <log description="Log" level="custom" separator=",">
