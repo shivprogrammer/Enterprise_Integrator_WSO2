@@ -11,4 +11,7 @@
     <artifact name="HiRollerBankGEO_LOCATION" groupId="com.wso2.training.HiRollerBankProject.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/endpoints/HiRollerBankGEO_LOCATION.xml</file>
     </artifact>
+    <artifact name="HiRollerBankATM_LOCATOR" groupId="com.wso2.training.HiRollerBankProject.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/HiRollerBankATM_LOCATOR.xml</file>
+    </artifact>
 </artifacts>
