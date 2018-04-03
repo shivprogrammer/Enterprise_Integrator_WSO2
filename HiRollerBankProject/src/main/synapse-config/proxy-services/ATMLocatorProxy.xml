@@ -9,7 +9,14 @@
         </inSequence>
         <outSequence>
             <switch source="get-property('STATUS')">
-                <case regex="GEO_LOCATION_REQUEST"/>
+                <case regex="GEO_LOCATION_REQUEST">
+                    <payloadFactory description="PayloadFactory" media-type="xml">
+                        <format>
+                            <inline xmlns=""/>
+                        </format>
+                        <args/>
+                    </payloadFactory>
+                </case>
                 <default/>
             </switch>
         </outSequence>
