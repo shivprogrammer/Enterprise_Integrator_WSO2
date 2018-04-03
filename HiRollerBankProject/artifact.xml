@@ -8,4 +8,7 @@
     <artifact name="ATMLocatorProxy" groupId="com.wso2.training.HiRollerBankProject.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/proxy-services/ATMLocatorProxy.xml</file>
     </artifact>
+    <artifact name="HiRollerBankGEO_LOCATION" groupId="com.wso2.training.HiRollerBankProject.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/HiRollerBankGEO_LOCATION.xml</file>
+    </artifact>
 </artifacts>
