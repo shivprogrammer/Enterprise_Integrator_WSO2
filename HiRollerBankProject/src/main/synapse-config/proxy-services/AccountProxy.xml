@@ -13,7 +13,9 @@
                     </log>
                     <payloadFactory description="PayloadFactory" media-type="xml">
                         <format>
-                            <inline xmlns=""/>
+                            <hir:checkBalance>
+                                <accountNo xmlns="">$1</accountNo>
+                            </hir:checkBalance>
                         </format>
                         <args/>
                     </payloadFactory>
