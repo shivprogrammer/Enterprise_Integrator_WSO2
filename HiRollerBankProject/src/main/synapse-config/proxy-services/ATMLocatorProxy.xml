@@ -3,7 +3,9 @@
     <target>
         <inSequence>
             <property description="Property" name="STATUS" scope="default" type="STRING" value="GEO_LOCATION_REQUEST"/>
-            <send/>
+            <send>
+                <endpoint key="HiRollerBankGEO_LOCATION"/>
+            </send>
         </inSequence>
         <outSequence/>
         <faultSequence/>
