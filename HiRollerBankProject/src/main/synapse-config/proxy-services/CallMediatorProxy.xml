@@ -2,7 +2,11 @@
 <proxy name="CallMediatorProxy" startOnLoad="true" transports="https http" xmlns="http://ws.apache.org/ns/synapse">
     <target>
         <endpoint key="HiRollerBankGEO_LOCATION"/>
-        <inSequence/>
+        <inSequence>
+            <call>
+                <endpoint key="HiRollerBankGEO_LOCATION"/>
+            </call>
+        </inSequence>
         <outSequence>
             <send/>
         </outSequence>
