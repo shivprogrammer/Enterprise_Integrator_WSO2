@@ -18,6 +18,7 @@
             <call>
                 <endpoint key="HiRollerBankATM_LOCATOR"/>
             </call>
+            <respond description="Respond"/>
         </inSequence>
         <outSequence/>
         <faultSequence/>
