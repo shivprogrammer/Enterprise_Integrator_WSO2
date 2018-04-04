@@ -19,19 +19,13 @@
   <dependencies>
     <dependency>
       <groupId>com.wso2.training.HiRollerBankProject.endpoint</groupId>
-      <artifactId>HiRollerBankAccountWS</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.wso2.training.HiRollerBankProject.proxy-service</groupId>
-      <artifactId>AccountProxy</artifactId>
+      <artifactId>HiRollerBankATM_LOCATOR</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
     <dependency>
       <groupId>com.wso2.training.HiRollerBankProject.endpoint</groupId>
-      <artifactId>HiRollerBankATM_LOCATOR</artifactId>
+      <artifactId>HiRollerBankAccountWS</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
@@ -44,6 +38,12 @@
     <dependency>
       <groupId>com.wso2.training.HiRollerBankProject.proxy-service</groupId>
       <artifactId>ATMLocatorProxy</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.wso2.training.HiRollerBankProject.proxy-service</groupId>
+      <artifactId>AccountProxy</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
