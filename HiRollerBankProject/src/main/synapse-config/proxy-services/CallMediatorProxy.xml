@@ -7,9 +7,13 @@
             </call>
             <payloadFactory description="PayloadFactory" media-type="xml">
                 <format>
-                    <inline xmlns=""/>
+                    <hir:getLocation xmlns:hir="http://hirollerbankws.training.wso2.com/">
+                        <zipcode xmlns="">$1</zipcode>
+                    </hir:getLocation>
                 </format>
-                <args/>
+                <args>
+                    <arg evaluator="xml" expression="//*[local-name()='return']" xmlns:hir="http://hirollerbankws.training.wso2.com/"/>
+                </args>
             </payloadFactory>
         </inSequence>
         <outSequence/>
