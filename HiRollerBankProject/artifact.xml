@@ -26,4 +26,7 @@
     <artifact name="EchoEndpoint" groupId="com.wso2.training.HiRollerBankProject.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/endpoints/EchoEndpoint.xml</file>
     </artifact>
+    <artifact name="LogSequence" groupId="com.wso2.training.HiRollerBankProject.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/LogSequence.xml</file>
+    </artifact>
 </artifacts>
