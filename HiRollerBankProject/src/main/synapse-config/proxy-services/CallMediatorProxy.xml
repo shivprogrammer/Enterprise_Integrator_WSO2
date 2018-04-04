@@ -15,6 +15,9 @@
                     <arg evaluator="xml" expression="//*[local-name()='return']" xmlns:hir="http://hirollerbankws.training.wso2.com/"/>
                 </args>
             </payloadFactory>
+            <call>
+                <endpoint key="HiRollerBankATM_LOCATOR"/>
+            </call>
         </inSequence>
         <outSequence/>
         <faultSequence/>
