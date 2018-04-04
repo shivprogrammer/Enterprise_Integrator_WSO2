@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <proxy name="CallMediatorProxy" startOnLoad="true" transports="https http" xmlns="http://ws.apache.org/ns/synapse">
     <target>
-        <endpoint key="HiRollerBankGEO_LOCATION"/>
         <inSequence>
             <call>
                 <endpoint key="HiRollerBankGEO_LOCATION"/>
             </call>
+            <payloadFactory description="PayloadFactory" media-type="xml">
+                <format>
+                    <inline xmlns=""/>
+                </format>
+                <args/>
+            </payloadFactory>
         </inSequence>
-        <outSequence>
-            <send/>
-        </outSequence>
+        <outSequence/>
         <faultSequence/>
     </target>
 </proxy>
