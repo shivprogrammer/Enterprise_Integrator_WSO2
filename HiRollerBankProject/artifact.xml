@@ -35,4 +35,7 @@
     <artifact name="My_EI_Task" groupId="com.wso2.training.HiRollerBankProject.task" version="1.0.0" type="synapse/task" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/tasks/My_EI_Task.xml</file>
     </artifact>
+    <artifact name="MessageStoreTask" groupId="com.wso2.training.HiRollerBankProject.task" version="1.0.0" type="synapse/task" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/tasks/MessageStoreTask.xml</file>
+    </artifact>
 </artifacts>
