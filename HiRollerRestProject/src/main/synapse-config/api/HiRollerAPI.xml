@@ -14,7 +14,9 @@
             </payloadFactory>
             <property name="messageType" scope="axis2" type="STRING" value="text/xml"/>
             <send>
-                <endpoint key="HiRollerBankAccountWS"/>
+                <endpoint>
+                    <address format="soap11" uri="http://localhost/:9764/HiRollerBankWS/services/accounts"/>
+                </endpoint>
             </send>
         </inSequence>
         <outSequence>
