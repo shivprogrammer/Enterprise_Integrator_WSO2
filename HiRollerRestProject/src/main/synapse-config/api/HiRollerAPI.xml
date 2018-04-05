@@ -13,6 +13,9 @@
                 </args>
             </payloadFactory>
             <property name="messageType" scope="axis2" type="STRING" value="text/xml"/>
+            <send>
+                <endpoint key="HiRollerBankAccountWS"/>
+            </send>
         </inSequence>
         <outSequence/>
         <faultSequence/>
