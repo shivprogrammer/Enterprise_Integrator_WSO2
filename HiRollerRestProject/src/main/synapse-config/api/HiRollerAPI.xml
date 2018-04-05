@@ -12,6 +12,7 @@
                     <arg evaluator="xml" expression="get-property('uri.var.AccountNo')"/>
                 </args>
             </payloadFactory>
+            <property name="messageType" scope="axis2" type="STRING" value="text/xml"/>
         </inSequence>
         <outSequence/>
         <faultSequence/>
