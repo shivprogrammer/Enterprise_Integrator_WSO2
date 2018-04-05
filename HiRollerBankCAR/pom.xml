@@ -22,6 +22,7 @@
     <com.wso2.training.HiRollerBankProject.message-processors_._EchoMessageProcessor>capp/EnterpriseServiceBus</com.wso2.training.HiRollerBankProject.message-processors_._EchoMessageProcessor>
     <com.wso2.training.HiRollerBankProject.sequence_._LogSequence>capp/EnterpriseServiceBus</com.wso2.training.HiRollerBankProject.sequence_._LogSequence>
     <com.wso2.training.HiRollerBankProject.proxy-service_._ATMLocatorProxy>capp/EnterpriseServiceBus</com.wso2.training.HiRollerBankProject.proxy-service_._ATMLocatorProxy>
+    <com.wso2.training.HiRollerBankProject.task_._MessageStoreTask>capp/EnterpriseServiceBus</com.wso2.training.HiRollerBankProject.task_._MessageStoreTask>
   </properties>
   <dependencies>
     <dependency>
@@ -93,6 +94,12 @@
     <dependency>
       <groupId>com.wso2.training.HiRollerBankProject.task</groupId>
       <artifactId>My_EI_Task</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.wso2.training.HiRollerBankProject.task</groupId>
+      <artifactId>MessageStoreTask</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
