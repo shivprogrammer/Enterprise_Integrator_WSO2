@@ -4,9 +4,13 @@
         <inSequence>
             <payloadFactory media-type="xml">
                 <format>
-                    <inline xmlns=""/>
+                    <hir:checkBalance xmlns:hir="http://hirollerbankws.training.wso2.com/">
+                        <accountNo xmlns="">$1</accountNo>
+                    </hir:checkBalance>
                 </format>
-                <args/>
+                <args>
+                    <arg evaluator="xml" expression="get-property('uri.var.AccountNo')"/>
+                </args>
             </payloadFactory>
         </inSequence>
         <outSequence/>
