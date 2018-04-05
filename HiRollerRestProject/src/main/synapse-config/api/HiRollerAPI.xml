@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <api context="/myBankAccount" name="HiRollerAPI" xmlns="http://ws.apache.org/ns/synapse">
     <resource methods="GET" uri-template="/checkBalance/{AccountNo}">
-        <inSequence/>
+        <inSequence>
+            <payloadFactory media-type="xml">
+                <format>
+                    <inline xmlns=""/>
+                </format>
+                <args/>
+            </payloadFactory>
+        </inSequence>
         <outSequence/>
         <faultSequence/>
     </resource>
