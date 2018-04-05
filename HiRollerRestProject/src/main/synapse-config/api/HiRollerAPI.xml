@@ -17,7 +17,10 @@
                 <endpoint key="HiRollerBankAccountWS"/>
             </send>
         </inSequence>
-        <outSequence/>
+        <outSequence>
+            <property name="messageType" scope="axis2" type="STRING" value="application/json"/>
+            <send/>
+        </outSequence>
         <faultSequence/>
     </resource>
 </api>
