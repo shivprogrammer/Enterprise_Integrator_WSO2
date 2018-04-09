@@ -2,8 +2,12 @@
 <proxy name="BankNoTest" startOnLoad="true" transports="http https" xmlns="http://ws.apache.org/ns/synapse">
     <target>
         <inSequence>
-            <call-template target=""/>
-            <call-template target=""/>
+            <call-template description="calling" target="BankNoTemplate">
+                <with-param name="number" value="3399"/>
+            </call-template>
+            <call-template description="calling" target="BankNoTemplate">
+                <with-param name="number" value="3400"/>
+            </call-template>
             <respond/>
         </inSequence>
         <outSequence/>
