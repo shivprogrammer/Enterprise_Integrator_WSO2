@@ -2,7 +2,9 @@
 <template name="BankNoTemplate" xmlns="http://ws.apache.org/ns/synapse">
     <parameter name="number"/>
     <sequence>
-        <log/>
+        <log level="custom">
+            <property expression="$func:number" name="service"/>
+        </log>
         <log/>
         <filter regex="default_regex" source="get-property('To')">
             <then>
