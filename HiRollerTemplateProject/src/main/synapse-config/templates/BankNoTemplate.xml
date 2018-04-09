@@ -5,13 +5,19 @@
         <log level="custom">
             <property expression="$func:number" name="service"/>
         </log>
-        <log/>
+        <log level="custom">
+            <property expression="$func:number mod 3" name="service"/>
+        </log>
         <filter regex="0.0" source="$func:number mod 3">
             <then>
-                <log/>
+                <log level="custom">
+                    <property name="service" value="a valid number"/>
+                </log>
             </then>
             <else>
-                <log/>
+                <log level="custom">
+                    <property name="service" value="an invalid number"/>
+                </log>
             </else>
         </filter>
     </sequence>
