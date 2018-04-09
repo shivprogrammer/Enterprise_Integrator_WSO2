@@ -10,14 +10,20 @@
                             <wsp:Policy>
                                 <throttle:ID throttle:type="IP">other</throttle:ID>
                                 <wsp:Policy>
-                                    <throttle:Deny/>
+                                    <throttle:Control>
+                                        <wsp:Policy>
+                                            <throttle:MaximumCount>5</throttle:MaximumCount>
+                                            <throttle:UnitTime>60000</throttle:UnitTime>
+                                            <throttle:ProhibitTimePeriod>60000</throttle:ProhibitTimePeriod>
+                                        </wsp:Policy>
+                                    </throttle:Control>
                                 </wsp:Policy>
                             </wsp:Policy>
                         </throttle:MediatorThrottleAssertion>
                     </wsp:Policy>
                 </policy>
                 <onReject>
-                    <log level="custom" separator=",">
+                    <log level="custom">
                         <property name="STATUS" value="Message Will NOT Pass - Exceeded Threshold"/>
                     </log>
                     <drop description=""/>
