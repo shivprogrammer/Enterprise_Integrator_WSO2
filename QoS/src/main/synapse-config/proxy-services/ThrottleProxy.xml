@@ -2,7 +2,16 @@
 <proxy name="ThrottleProxy" startOnLoad="true" transports="https http" xmlns="http://ws.apache.org/ns/synapse">
     <target>
         <endpoint key="HiRollerBankWSEndpoint"/>
-        <inSequence/>
+        <inSequence>
+            <throttle id="group_id">
+                <onReject/>
+                <onAccept>
+                    <log level="custom" separator=",">
+                        <property name="STATUS" value="Message Will Pass"/>
+                    </log>
+                </onAccept>
+            </throttle>
+        </inSequence>
         <outSequence>
             <send/>
         </outSequence>
