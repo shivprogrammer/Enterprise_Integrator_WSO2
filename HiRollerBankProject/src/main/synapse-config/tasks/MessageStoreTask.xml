@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <task class="org.apache.synapse.startup.tasks.MessageInjector" group="synapse.simple.quartz" name="MessageStoreTask" xmlns="http://ws.apache.org/ns/synapse">
     <trigger once="true"/>
+    <property name="proxyName" value="MessageStoreProxy" xmlns:task="http://www.wso2.org/products/wso2commons/tasks"/>
     <property name="format" value="soap11" xmlns:task="http://www.wso2.org/products/wso2commons/tasks"/>
     <property name="message" xmlns:task="http://www.wso2.org/products/wso2commons/tasks">
         <hir:comment xmlns:hir="http://hirollerbankws.training.wso2.com/">
             <text xmlns="">This is my message</text>
         </hir:comment>
     </property>
-    <property name="proxyName" value="MessageStoreProxy" xmlns:task="http://www.wso2.org/products/wso2commons/tasks"/>
 </task>
