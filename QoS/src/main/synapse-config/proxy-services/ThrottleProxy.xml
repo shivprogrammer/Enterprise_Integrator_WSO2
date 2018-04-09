@@ -4,7 +4,11 @@
         <endpoint key="HiRollerBankWSEndpoint"/>
         <inSequence>
             <throttle id="group_id">
-                <onReject/>
+                <onReject>
+                    <log level="custom" separator=",">
+                        <property name="STATUS" value="Message Will Not Pass - Exceeded Threshold"/>
+                    </log>
+                </onReject>
                 <onAccept>
                     <log level="custom" separator=",">
                         <property name="STATUS" value="Message Will Pass"/>
