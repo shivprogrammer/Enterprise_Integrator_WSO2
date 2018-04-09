@@ -1,1 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><artifacts/>
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="BankNoTemplate" groupId="com.wso2.training.HiRollerTemplateProject.template" version="1.0.0" type="synapse/sequenceTemplate" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/templates/BankNoTemplate.xml</file>
+    </artifact>
+</artifacts>
