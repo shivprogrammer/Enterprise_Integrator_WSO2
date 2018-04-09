@@ -2,4 +2,7 @@
     <artifact name="HiRollerBankWSEndpoint" groupId="com.wso2.training.QoS.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/endpoints/HiRollerBankWSEndpoint.xml</file>
     </artifact>
+    <artifact name="ThrottleProxy" groupId="com.wso2.training.QoS.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/ThrottleProxy.xml</file>
+    </artifact>
 </artifacts>
