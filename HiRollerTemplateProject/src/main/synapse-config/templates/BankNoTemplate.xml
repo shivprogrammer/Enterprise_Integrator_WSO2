@@ -6,7 +6,7 @@
             <property expression="$func:number" name="service"/>
         </log>
         <log/>
-        <filter regex="default_regex" source="get-property('To')">
+        <filter regex="0.0" source="$func:number mod 3">
             <then>
                 <log/>
             </then>
