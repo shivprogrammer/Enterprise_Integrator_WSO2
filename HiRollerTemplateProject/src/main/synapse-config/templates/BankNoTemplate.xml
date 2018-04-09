@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <template name="BankNoTemplate" xmlns="http://ws.apache.org/ns/synapse">
     <parameter name="number"/>
-    <sequence/>
+    <sequence>
+        <log/>
+        <log/>
+        <filter regex="default_regex" source="get-property('To')">
+            <then>
+                <log/>
+            </then>
+            <else>
+                <log/>
+            </else>
+        </filter>
+    </sequence>
 </template>
