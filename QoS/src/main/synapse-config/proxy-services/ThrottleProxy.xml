@@ -10,7 +10,7 @@
                             <wsp:Policy>
                                 <throttle:ID throttle:type="IP">other</throttle:ID>
                                 <wsp:Policy>
-                                    <throttle:Allow/>
+                                    <throttle:Deny/>
                                 </wsp:Policy>
                             </wsp:Policy>
                         </throttle:MediatorThrottleAssertion>
@@ -20,7 +20,7 @@
                     <log level="custom" separator=",">
                         <property name="STATUS" value="Message Will NOT Pass - Exceeded Threshold"/>
                     </log>
-                    <drop/>
+                    <drop description=""/>
                 </onReject>
                 <onAccept>
                     <log level="custom" separator=",">
