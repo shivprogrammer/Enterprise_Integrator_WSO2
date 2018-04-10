@@ -9,6 +9,7 @@
             </cache>
         </inSequence>
         <outSequence>
+            <cache collector="true" id="cache_mediator_test" scope="per-mediator"/>
             <send/>
         </outSequence>
         <faultSequence/>
