@@ -3,7 +3,7 @@
     <target>
         <endpoint key="HiRollerBankWSEndpoint"/>
         <inSequence>
-            <cache collector="false" hashGenerator="org.wso2.carbon.mediator.cache.digest.DOMHASHGenerator" maxMessageSize="2000" scope="per-mediator" timeout="120">
+            <cache collector="false" hashGenerator="org.wso2.carbon.mediator.cache.digest.DOMHASHGenerator" id="cache_mediator_test" maxMessageSize="2000" scope="per-mediator" timeout="120">
                 <onCacheHit/>
                 <implementation maxSize="1000" type="memory"/>
             </cache>
