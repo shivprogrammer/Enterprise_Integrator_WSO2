@@ -2,7 +2,12 @@
 <proxy name="Cachingmediator" startOnLoad="true" transports="https http" xmlns="http://ws.apache.org/ns/synapse">
     <target>
         <endpoint key="HiRollerBankWSEndpoint"/>
-        <inSequence/>
+        <inSequence>
+            <cache collector="false" hashGenerator="org.wso2.carbon.mediator.cache.digest.DOMHASHGenerator" maxMessageSize="2000" scope="per-mediator" timeout="120">
+                <onCacheHit/>
+                <implementation maxSize="1000" type="memory"/>
+            </cache>
+        </inSequence>
         <outSequence>
             <send/>
         </outSequence>
