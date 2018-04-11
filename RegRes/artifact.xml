@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="ProxyPolicy" groupId="com.wso2.training.RegRes.resource" version="1.0.0" type="registry/resource" serverRole="GovernanceRegistry">
+        <item>
+            <file>ProxyPolicy.xml</file>
+            <path>/_system/governance/ws-policy</path>
+            <mediaType>application/wspolicy+xml</mediaType>
+        </item>
+    </artifact>
+</artifacts>
